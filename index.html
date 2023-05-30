@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekushi</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+        }
+      </style>
+      <script>
+        function loadRandomCat() {
+      var img = document.getElementById('catImage');
+      img.src = '/random-cat?' + new Date().getTime();
+        }
+      </script>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <button onclick="loadRandomCat()">Load Random Cat</button>
+  <br>
+    <img src="/random-cat" alt="Random Cat Image">
+</body>
+<script src="script.js"></script>
+
+</html>
